@@ -7,11 +7,11 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>ADRM RCW</title>
+    <title>NA Transparency</title>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="css/theme/black.css" />
+    <link rel="stylesheet" href="css/theme/census.css" />
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/monokai.css" />
@@ -32,65 +32,323 @@
       <div class="slides">
         <section>
           <section>
-            <h1>Citing Data</h1>
+            <h2>Census Bureau & Data Dissemination</h2>
             <hr />
             <p>CEDSCI</p>
           </section>
           <section>First things first - what is CEDSCI</section>
+
+          <section>
+            <img data-src="img/data-cycle.png" />
+          </section>
+
+          <section>
+            <img data-src="img/as-is.png" />
+          </section>
+
+          <section>
+            <img data-src="img/to-be.png" />
+          </section>
+        </section>
+        <section>
+          <section>
+            so how are we going about this?
+          </section>
+          <section>
+            <b>O</b>pen <b>G</b>overnment <b>D</b>ata
+            <hr />
+            <p>learn from others and our user base</p>
+          </section>
+          <section>
+            <table
+              class="table table-bordered table-hover table-condensed"
+              style="font-size:17px"
+            >
+              <thead>
+                <tr>
+                  <th title="Field #1">Principle</th>
+                  <th title="Field #2">Indicator</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Completeness</td>
+                  <td>
+                    datasets should be complete, protect privacy, and include
+                    explanatory metadata
+                  </td>
+                </tr>
+                <tr>
+                  <td>Primacy</td>
+                  <td>
+                    datasets should be primary source data and include details
+                    on how it was collected
+                  </td>
+                </tr>
+                <tr>
+                  <td>Timeliness</td>
+                  <td>
+                    made available in a timely fashion and prioritize data that
+                    is time sensitive.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ease of Physical and Electronic Access</td>
+                  <td>
+                    datasets should be accessible, easy to discover, access, and
+                    consume
+                  </td>
+                </tr>
+                <tr>
+                  <td>Machine readability</td>
+                  <td>
+                    information should be stored in widely-used,
+                    machine-friendly formats, and include docs
+                  </td>
+                </tr>
+                <tr>
+                  <td>Non-discrimination</td>
+                  <td>
+                    anyone can access the data without having to identify
+                    themselves or provide justification
+                  </td>
+                </tr>
+                <tr>
+                  <td>Commonly owned or open Standards</td>
+                  <td>
+                    use open standards
+                  </td>
+                </tr>
+                <tr>
+                  <td>Licensing</td>
+                  <td>
+                    release into the public domain
+                  </td>
+                </tr>
+                <tr>
+                  <td>Permanence</td>
+                  <td>
+                    maintain information online in perpetuity
+                  </td>
+                </tr>
+                <tr>
+                  <td>Usage Costs</td>
+                  <td>
+                    no cost to access
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td style="text-align: right">
+                    <a
+                      href="https://sunlightfoundation.com/policy/documents/ten-open-data-principles/"
+                      >Sunlight foundation, 2017</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section
+            data-background-iframe="https://data.oecd.org/"
+            data-background-interactive
+          ></section>
+          <section>
+            who are the customers
+          </section>
+          <section>
+            <ul style="font-size:.7em">
+              <li>
+                <span
+                  style="background-color:#06BA63;color:#102d51;padding:0px 20px"
+                >
+                  Green
+                </span>
+                &nbsp Developers or people who want to do advanced modeling
+                and/or programming with the data
+              </li>
+              <li>
+                <span
+                  style="background-color:#16d8b3;color:#102d51;padding:0px 20px"
+                  >Lime
+                </span>
+                &nbsp AFF users who want to access tables and mainly volume
+                data, and potentially build something or incorporate a layer
+                into their own tool
+              </li>
+              <li>
+                <span
+                  style="background-color:#F6FEAA;color:#102d51;padding:0px 20px"
+                  >Yellow</span
+                >
+                &nbsp AFF users who want to download volume data and then run
+                stats and/or manipulate data
+              </li>
+              <li>
+                <span
+                  style="background-color:#FBB13C;color:#102d51;padding:0px 20px"
+                  >Orange</span
+                >
+                &nbsp Show me the #s on the site or let me download just the
+                data I need but I'm not that technical
+              </li>
+              <li>
+                <span
+                  style="background-color:#2D93AD;color:#102d51;padding:0px 20px"
+                  >Blue</span
+                >
+                &nbsp Small scale, informal data consumer, not familiar with
+                Census data holdings and just wants to see raw number on the
+                site
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ol>
+              <li>
+                How are different user types currently searching for and
+                interacting with data?
+              </li>
+              <li>
+                What defines the “right” result format and content for different
+                user types?
+              </li>
+              <li>
+                How can we help folks discover Census data?
+              </li>
+            </ol>
+          </section>
+          <section>
+            <table style="width:100%;font-size:.5em">
+              <tr>
+                <th>User cluster</th>
+                <th>Map needs/preferences</th>
+                <th>Table needs/preferences</th>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    style="background-color:#06BA63;color:#102d51;padding:0px 20px"
+                    >Green</span
+                  >
+                </td>
+                <td>
+                  Likes the option for interactive maps, but still want source
+                  data/developer resources page
+                </td>
+                <td><strong>Not interested in tables</strong></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    style="background-color:#16d8b3;color:#102d51;padding:0px 20px"
+                    >Lime</span
+                  >
+                </td>
+                <td>
+                  Map is a nice to have, but not what they’re looking for; may
+                  explore a map if easy to use
+                </td>
+                <td>Uses tables, downloads and removes extraneous info</td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    style="background-color:#F6FEAA;color:#102d51;padding:0px 20px"
+                    >Yellow</span
+                  >
+                </td>
+                <td>Maps with downloadable shapefiles would be useful</td>
+                <td>
+                  Uses tables, downloads and removes extraneous info.
+                  <strong>Needs customizable tables</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    style="background-color:#FBB13C;color:#102d51;padding:0px 20px"
+                    >Orange</span
+                  >
+                </td>
+                <td>No strong need for maps</td>
+                <td><strong>Needs customizable tables</strong></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    style="background-color:#2D93AD;color:#102d51;padding:0px 20px"
+                    >Blue</span
+                  >
+                </td>
+                <td>
+                  Likes ability to view color coded map with their boundary of
+                  interest outlined, along side raw number, with comparison to
+                  similar places
+                </td>
+                <td>
+                  <strong>Not interested in tables</strong>, but may contain the
+                  answer MOE, median, mean, terms like “imputed” not helpful
+                  Will copy down info needed from tables manually
+                </td>
+              </tr>
+            </table>
+          </section>
+        </section>
+        <section>
+          <section>so how are we doing?</section>
           <section
             data-background-iframe="https://data.census.gov"
             data-background-interactive
           ></section>
+        </section>
+        <section>
           <section>
             Where are we headed?
           </section>
           <section>
+            <p>user feedback shapes the product <u>as we build it</u>.</p>
+          </section>
+          <section>
+            <p>how are we approaching this?</p>
+          </section>
+          <section>
+            <p>
+              we work iteratively
+            </p>
+            <p>
+              we release code (at least) every 40 days
+            </p>
+            <p>we communicate as much as possible</p>
+            <p>we try to manage expectations</p>
+            <p>
+              we take every comment we receive seriously*
+            </p>
+          </section>
+          <section>
             <img data-src="img/publications.png" height="500" />
           </section>
-        </section>
-        <section>
-          <section>Here's the current state</section>
-
+          <section>
+            <img data-src="img/devexLanding.png" />
+          </section>
+          <section>
+            <img data-src="img/api-first.png" />
+          </section>
+          <section>
+            <img data-src="img/devexQueryBuilder.png" />
+          </section>
+          <section>
+            <img data-src="img/devexSamplesHome.png" />
+          </section>
           <section
-            data-background-iframe="https://libguides.lib.msu.edu/c.php?g=96245&p=626237"
+            data-background-iframe="https://xdgov.github.io/data-design-standards/"
             data-background-interactive
           ></section>
-          <section>We are going to make our data easier to cite</section>
-          <section>
-            We will include a one-click citation method
-            <hr />
-            <img data-src="img/cite.png" height="400" />
-          </section>
-          <section>
-            It will be easily exportable and co-located with the content
-            <hr />
-            <img data-src="img/article.png" height="400" />
-          </section>
         </section>
         <section>
           <section>
-            <h2>The ask</h2>
-            <hr />
-            what does the Census data product citation schema need to include?
-          </section>
-          <section>
-            does it work with
-            <hr />
-            <ul>
-              <li>tabulated products</li>
-              <li>microdata</li>
-              <li>restricted data</li>
-              <li>all directorates</li>
-              <li>DOIs</li>
-              <li>multiple versions</li>
-              <li>errata notes</li>
-              <li>geographies</li>
-              <li>and million other key things that I'm missing</li>
-            </ul>
-          </section>
-          <section>
             Please let me know if you'd like to work with us in developing the
-            solution
+            platform
             <hr />
             <a href="zachary.richard.whitman@census.gov"
               >zach whitman<br />zachary.richard.whitman@census.gov</a
